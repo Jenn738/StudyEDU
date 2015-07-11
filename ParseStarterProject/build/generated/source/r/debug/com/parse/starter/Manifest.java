@@ -10,8 +10,8 @@ package com.parse.starter;
 public final class Manifest {
     public static final class permission {
         /** 
-      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
-      to match your app's package name + ".permission.C2D_MESSAGE".
+          IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+          to match your app's package name + ".permission.C2D_MESSAGE".
     
          */
         public static final String C2D_MESSAGE="com.parse.starter.permission.C2D_MESSAGE";

@@ -2,25 +2,46 @@
 <items version="2" >
 
     <item
-        jar="/Users/yiningchen/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jar="/Users/jenniferjain/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Users/yiningchen/Downloads/Parse-Starter-Project-1.9.2/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-298a1615dc13647c9861d8fc0e655a426d2d2e26.jar" />
+        <dex dex="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-eb27381e00593713b99ff3ddd2172337739d30bb.jar" />
     </item>
     <item
-        jar="/Users/yiningchen/Downloads/Parse-Starter-Project-1.9.2/ParseStarterProject/libs/ParseCrashReporting-1.9.2.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="83f3b1e397f1cc3f05cb9db078d9e364b5f5e218">
-        <dex dex="/Users/yiningchen/Downloads/Parse-Starter-Project-1.9.2/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.2-8cb69e9344d2ef7c8cf323ddd028569072427faf.jar" />
-    </item>
-    <item
-        jar="/Users/yiningchen/Downloads/Parse-Starter-Project-1.9.2/ParseStarterProject/libs/Parse-1.9.2.jar"
+        jar="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/libs/Parse-1.9.2.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="fe739334780fe321141e62720822c2d456061899">
-        <dex dex="/Users/yiningchen/Downloads/Parse-Starter-Project-1.9.2/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.9.2-c22a1ba59663598dceb71f1fcf70d2639de9404a.jar" />
+        <dex dex="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.9.2-4966a3cc8718426d9b2a2bc1b26bbf610e2387cd.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-1575f3d9bf76cceebe073653faa5377bc2d56a16.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/libs/ParseCrashReporting-1.9.2.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="83f3b1e397f1cc3f05cb9db078d9e364b5f5e218">
+        <dex dex="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.2-cfaf2e461b289574c5c02be86eec8485748de11d.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-3606e022ed99c8acf52a197c4ef762f829ced029.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/jenniferjain/Desktop/Code/ParseStarterModified/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-101e088f44c251fdcff31b343d9bfcc7284ca65f.jar" />
     </item>
 
 </items>

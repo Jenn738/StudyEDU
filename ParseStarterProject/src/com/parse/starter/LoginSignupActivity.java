@@ -21,7 +21,7 @@ import com.parse.SignUpCallback;
 public class LoginSignupActivity extends Activity {
     // Declare Variables
     Button loginbutton;
-    Button signup;
+    Button register;
     String usernametxt;
     String passwordtxt;
     EditText password;
@@ -38,7 +38,7 @@ public class LoginSignupActivity extends Activity {
 
         // Locate Buttons in main.xml
         loginbutton = (Button) findViewById(R.id.login);
-        signup = (Button) findViewById(R.id.signup);
+        register = (Button) findViewById(R.id.register);
 
         // Login Button Click Listener
         loginbutton.setOnClickListener(new OnClickListener() {
@@ -54,45 +54,49 @@ public class LoginSignupActivity extends Activity {
                             public void done(ParseUser user, ParseException e) {
                                 if (user != null) {
                                     // If user exist and authenticated, send user to Welcome.class
-                                    Intent intent = new Intent(LoginSignupActivity.this,Welcome.class);
+                                    Intent intent = new Intent(LoginSignupActivity.this,NavigationActivity.class);
                                     startActivity(intent);
                                     Toast.makeText(getApplicationContext(),"Successfully Logged in",Toast.LENGTH_LONG).show();
                                     finish();
+
                                 } else {
-                                    Toast.makeText(getApplicationContext(),"No such user exist, please signup",Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(),"No such user exist, please register",Toast.LENGTH_LONG).show();
                                 }
                             }
                         });
             }
         });
-        // Sign up Button Click Listener
-        signup.setOnClickListener(new OnClickListener() {
+        // Sign up Button Click Listener leads to Registration Page
+        register.setOnClickListener(new OnClickListener() {
 
             public void onClick(View arg0) {
-                // Retrieve the text entered from the EditText
-                usernametxt = username.getText().toString();
-                passwordtxt = password.getText().toString();
+                startActivity(new Intent(LoginSignupActivity.this, Register.class));
 
-                // Force user to fill up the form
-                if (usernametxt.equals("") && passwordtxt.equals("")) {
-                    Toast.makeText(getApplicationContext(),"Please complete the sign up form",Toast.LENGTH_LONG).show();
-
-                } else {
-                    // Save new user data into Parse.com Data Storage
-                    ParseUser user = new ParseUser();
-                    user.setUsername(usernametxt);
-                    user.setPassword(passwordtxt);
-                    user.signUpInBackground(new SignUpCallback() {
-                        public void done(ParseException e) {
-                            if (e == null) {
-                                // Show a simple Toast message upon successful registration
-                                Toast.makeText(getApplicationContext(),"Successfully Signed up, please log in.",Toast.LENGTH_LONG).show();
-                            } else {
-                                Toast.makeText(getApplicationContext(),"Sign up Error", Toast.LENGTH_LONG).show();
-                            }
-                        }
-                    });
-                }
+//
+//                // Retrieve the text entered from the EditText
+//                usernametxt = username.getText().toString();
+//                passwordtxt = password.getText().toString();
+//
+//                // Force user to fill up the form
+//                if (usernametxt.equals("") && passwordtxt.equals("")) {
+//                    Toast.makeText(getApplicationContext(),"Please complete the registration form",Toast.LENGTH_LONG).show();
+//
+//                } else {
+//                    // Save new user data into Parse.com Data Storage
+//                    ParseUser user = new ParseUser();
+//                    user.setUsername(usernametxt);
+//                    user.setPassword(passwordtxt);
+//                    user.signUpInBackground(new SignUpCallback() {
+//                        public void done(ParseException e) {
+//                            if (e == null) {
+//                                // Show a simple Toast message upon successful registration
+//                                Toast.makeText(getApplicationContext(),"Successfully Signed up, please log in.",Toast.LENGTH_LONG).show();
+//                            } else {
+//                                Toast.makeText(getApplicationContext(),"Sign up Error", Toast.LENGTH_LONG).show();
+//                            }
+//                        }
+//                    });
+//                }
 
             }
         });
