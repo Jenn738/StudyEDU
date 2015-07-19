@@ -31,10 +31,10 @@ public class MainActivity extends Activity {
         Nan.saveInBackground();
 
         ParseObject Jenn = new ParseObject("DataBase");
-        Jenn.put("UserName", "JJ");
+        Jenn.put("UserName", "JJ"); // pretty much key-value pairs
         Jenn.put("longitude", 19.1);
         Jenn.put("latitude", 44.2);
-        Jenn.saveInBackground();
+        Jenn.saveInBackground(); // send to Parse
 
         ParseObject Hugh = new ParseObject("DataBase");
         Hugh.put("UserName", "HL");
