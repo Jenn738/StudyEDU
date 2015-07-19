@@ -53,6 +53,10 @@
             android:name=".NavigationActivity"
             android:label="@string/title_activity_navigation" >
         </activity>
+        <activity
+            android:name=".CreateGroup"
+            android:label="@string/title_activity_create_group" >
+        </activity>
     </application>
 
 </manifest>

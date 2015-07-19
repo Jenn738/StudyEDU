@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your class ID and #"
+        android:id="@+id/ClassTxt" />
+
+    <RelativeLayout
+        android:id="@+id/ReleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_weight="1"
+            android:entries="@array/departments"
+            android:prompt="@string/select"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="195dp"
+            android:entries="@array/courses"
+            android:prompt="@string/select2"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Group Name"
+        android:id="@+id/nameTxt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameEditTxt"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a month, day and year"
+        android:id="@+id/dateTxt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerMonth"
+            android:entries="@array/months"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"  />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerDay"
+            android:layout_toRightOf="@id/spinnerMonth"
+            android:entries="@array/days"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentEnd="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerYear"
+            android:layout_toRightOf="@id/spinnerDay"
+            android:entries="@array/years"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"  />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select a meeting time"
+        android:id="@+id/TimeTxt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerHour"
+            android:entries="@array/hours"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=":"
+            android:id="@+id/textView3"
+            android:gravity="center_vertical"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerMinute"
+            android:entries="@array/minutes"
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:id="@+id/spinnerAMPM"
+            android:entries="@array/am_or_pm"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the maximum number of students who can join"
+        android:id="@+id/numTxt" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinnerMaxNum"
+        android:entries="@array/num_peers"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the meeting location"
+        android:id="@+id/LocationTxt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LocEditTxt"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter any additional information"
+        android:id="@+id/InfoTxt" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Group"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/activity_create_group.xml -->

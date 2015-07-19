@@ -16,6 +16,9 @@ dependencies {
     compile fileTree(dir: 'libs', include: 'ParseCrashReporting-*.jar')
     compile 'com.parse.bolts:bolts-android:1.2.0'
     compile 'com.android.support:support-v4:22.2.0'
+    compile files('libs/additionnal.jar')
+    compile files('libs/activation.jar')
+    compile files('libs/javax.mail.jar')
 }
 
 android {

@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//setContentView(R.layout.main);
-
+/*
         // Dummy positions
         ParseObject Nan = new ParseObject("DataBase");
         Nan.put("UserName", "NH");
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
         Yin.put("longitude", 2.1);
         Yin.put("latitude", 50.2);
         Yin.saveInBackground();
-
+*/
         // Determine whether the current user is an anonymous user
         if (ParseAnonymousUtils.isLinked(ParseUser.getCurrentUser())) {
             // If user is anonymous, send the user to LoginSignupActivity.class

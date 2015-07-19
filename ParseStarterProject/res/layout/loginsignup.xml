@@ -13,16 +13,27 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="fill_parent"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtusername"
         android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/emailsuffix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtusername"
+
+        android:layout_toRightOf="@+id/username"
+        android:layout_alignParentRight="true"
+        android:text="@string/Emailsuffix"/>
 
     <TextView
         android:id="@+id/txtpassword"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/username"
+        android:gravity="bottom"
         android:text="@string/Password"/>
 
     <EditText

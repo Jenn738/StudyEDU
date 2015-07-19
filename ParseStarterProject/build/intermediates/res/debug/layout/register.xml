@@ -1,0 +1,86 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="School E-mail"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtemail"
+        android:inputType="textEmailAddress"/>
+
+    <TextView
+        android:id="@+id/emailsuffix2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtemail"
+        android:layout_toRightOf="@+id/email"
+        android:layout_alignParentRight="true"
+        android:text="@string/Emailsuffix"/>
+
+    <Button
+        android:id="@+id/sendemail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sendemail"
+        android:layout_below="@+id/email"/>
+
+    <TextView
+        android:id="@+id/verificationcodetxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verificationcodetxt"
+        android:layout_below="@+id/sendemail"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/verificationcodetxt"
+        android:id="@+id/verificationcode"/>
+
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Password"
+        android:layout_below="@+id/verificationcode"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/txtpassword"
+        android:id="@+id/password"/>
+
+    <TextView
+        android:id="@+id/txtpassword2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Repeat Password"
+        android:layout_below="@+id/password"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/txtpassword2"
+        android:id="@+id/password2"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:layout_below="@+id/password2"/>
+</RelativeLayout><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/register.xml -->
