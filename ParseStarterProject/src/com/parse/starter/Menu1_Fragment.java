@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -56,11 +57,20 @@ public class Menu1_Fragment extends Fragment {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(getActivity().getApplicationContext(),
-                        "Result : " +
-                                "\nDepartment : " + String.valueOf(spinner1.getSelectedItem()) +
-                                "\nClass : " + String.valueOf(spinner2.getSelectedItem()),
-                        Toast.LENGTH_SHORT).show();
+
+                        //what to put here
+                // Create new fragment and transaction
+                Fragment Matches_Fragment = new Matches_Fragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.container, Matches_Fragment)
+                        .commit();
+
+//                Toast.makeText(getActivity().getApplicationContext(),
+//                        "Result : " +
+//                                "\nDepartment : " + String.valueOf(spinner1.getSelectedItem()) +
+//                                "\nClass : " + String.valueOf(spinner2.getSelectedItem()),
+//                        Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/libs/Parse-1.9.2.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="fe739334780fe321141e62720822c2d456061899">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.9.2-9fe3c251c71271ff0463ab243592d12526569aff.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/libs/ParseCrashReporting-1.9.2.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="83f3b1e397f1cc3f05cb9db078d9e364b5f5e218">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.2-b44bf83b461bef83a0165794a8bf83c816dff474.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-d89f1aef9b2157398322f14100e4bd0effa7b2dc.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/libs/javax.mail.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="7e22a1be948f666bb0206e782c03b129dfcdf016">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/javax.mail-d2874c8e7f3f453a92a43b2bc6b592be5ff994fc.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/libs/additionnal.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/additionnal-cb99a9afb9664317c3dcb103eb001e5a4faa37e7.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/libs/activation.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="8acf42612ad530a4fbf4058982555394298b4ed8">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/activation-373f1d61e0c6e86d8cb8ded53d831ec5c1f75583.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-1575f3d9bf76cceebe073653faa5377bc2d56a16.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-981d898d03e8d2489d00e1a4a852e0e598759c5b.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-eb27381e00593713b99ff3ddd2172337739d30bb.jar" />
+    </item>
+
+</items>

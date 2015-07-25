@@ -56,4 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/login"
         android:text="@string/RegisterBtn"/>
+<<<<<<< Updated upstream
 </RelativeLayout><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/loginsignup.xml -->
+=======
+</RelativeLayout><!-- From: file:/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/res/layout/loginsignup.xml -->
+>>>>>>> Stashed changes

@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/new_fragment"
     android:gravity="center_horizontal">
+
+    <FrameLayout android:name="fragments.YourInitialFragment"
+        android:id="@+id/fragment_container"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="This is the page where you can view the groups you are in"
+        android:text="This is the page where you can view the groups that you're in"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+<<<<<<< Updated upstream
 </RelativeLayout><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/menu2_layout.xml -->
+=======
+</RelativeLayout><!-- From: file:/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/res/layout/menu2_layout.xml -->
+>>>>>>> Stashed changes

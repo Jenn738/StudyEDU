@@ -35,6 +35,10 @@
     <string name="select2">Choose a class</string>
 
     <string name="hello_world">Hello world!</string>
+
+
+    <string name="toggle">Toggle View</string>
+
     <!-- Here is the list of items that will be displayed in the first spinner -->
     <string-array name="departments">
         <item>AAAS</item>
