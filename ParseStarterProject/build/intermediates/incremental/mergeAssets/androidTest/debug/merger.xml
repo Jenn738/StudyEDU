@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< Updated upstream
-<merger version="3"><dataSet config="main"><source path="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/src/androidTest/assets"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/src/androidTest/assets"/></dataSet></merger>
->>>>>>> Stashed changes
+<merger version="3"><dataSet config="main"><source path="/Users/yiningchen/Downloads/VersionJuly25/ParseStarterProject/src/androidTest/assets"/></dataSet></merger>

@@ -3,8 +3,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" android:showAsAction="never" />
 </menu>
-<<<<<<< Updated upstream
-<!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/menu/menu_create_group.xml -->
-=======
-<!-- From: file:/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/res/menu/menu_create_group.xml -->
->>>>>>> Stashed changes
+<!-- From: file:/Users/yiningchen/Downloads/VersionJuly25/ParseStarterProject/res/menu/menu_create_group.xml -->

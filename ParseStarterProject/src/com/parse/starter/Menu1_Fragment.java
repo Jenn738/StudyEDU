@@ -62,6 +62,10 @@ public class Menu1_Fragment extends Fragment {
                 // Create new fragment and transaction
                 Fragment Matches_Fragment = new Matches_Fragment();
                 FragmentManager fragmentManager = getFragmentManager();
+                Bundle bundle = new Bundle();
+                bundle.putString("Dept", String.valueOf(spinner1.getSelectedItem()));
+                bundle.putString("Class", String.valueOf(spinner2.getSelectedItem()));
+                Matches_Fragment.setArguments(bundle);
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, Matches_Fragment)
                         .commit();

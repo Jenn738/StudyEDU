@@ -14,8 +14,4 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         />
-<<<<<<< Updated upstream
-</menu><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/menu/navigation.xml -->
-=======
-</menu><!-- From: file:/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/res/menu/navigation.xml -->
->>>>>>> Stashed changes
+</menu><!-- From: file:/Users/yiningchen/Downloads/VersionJuly25/ParseStarterProject/res/menu/navigation.xml -->

@@ -13,8 +13,8 @@
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@id/toggleButton"
         android:layout_alignParentTop="true" />
 
-</RelativeLayout><!-- From: file:/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/res/layout/matches_layout.xml -->
+</RelativeLayout><!-- From: file:/Users/yiningchen/Downloads/VersionJuly25/ParseStarterProject/res/layout/matches_layout.xml -->

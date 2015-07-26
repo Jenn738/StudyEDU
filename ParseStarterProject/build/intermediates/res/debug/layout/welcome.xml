@@ -27,8 +27,4 @@
         android:layout_centerInParent="true"
         android:text="@string/LogoutBtn" />
 
-<<<<<<< Updated upstream
-</RelativeLayout><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/welcome.xml -->
-=======
-</RelativeLayout><!-- From: file:/Users/jenniferjain/Documents/VersionJuly18/ParseStarterProject/res/layout/welcome.xml -->
->>>>>>> Stashed changes
+</RelativeLayout><!-- From: file:/Users/yiningchen/Downloads/VersionJuly25/ParseStarterProject/res/layout/welcome.xml -->
