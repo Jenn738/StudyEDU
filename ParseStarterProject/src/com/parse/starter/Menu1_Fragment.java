@@ -23,16 +23,16 @@ import android.util.Log;
  * Created by jenniferjain on 7/8/15.
  */
 public class Menu1_Fragment extends Fragment {
-    Button CreateGroupButton;
+//    Button CreateGroupButton;
     View rootview;
     private Button button;
     private Spinner spinner1, spinner2;
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         rootview = inflater.inflate(R.layout.menu1_layout, container, false);
-        CreateGroupButton = (Button) rootview.findViewById(R.id.create_study_group);
+//        CreateGroupButton = (Button) rootview.findViewById(R.id.create_study_group);
 
         button = (Button) rootview.findViewById(R.id.button);
 
@@ -41,16 +41,18 @@ public class Menu1_Fragment extends Fragment {
         spinner1.setOnItemSelectedListener(new MyOnItemSelectedListener());
         spinner2.setOnItemSelectedListener(new MyOnItemSelectedListener());
 
-        CreateGroupButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getActivity().getApplicationContext(), "Test", Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(Menu1_Fragment.this.getActivity(), CreateGroup.class);
-                startActivity(intent);
 
-            }
-        });
+//        CreateGroupButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getActivity().getApplicationContext(), "Test", Toast.LENGTH_LONG).show();
+//
+//                Intent intent = new Intent(Menu1_Fragment.this.getActivity(), CreateGroup.class);
+//                startActivity(intent);
+//
+//            }
+//        });
 
         button.setOnClickListener(new View.OnClickListener()
         {
@@ -68,6 +70,7 @@ public class Menu1_Fragment extends Fragment {
                 Matches_Fragment.setArguments(bundle);
                 fragmentManager.beginTransaction()
                         .replace(R.id.container, Matches_Fragment)
+                        .addToBackStack(null)
                         .commit();
 
 //                Toast.makeText(getActivity().getApplicationContext(),

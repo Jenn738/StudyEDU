@@ -1,11 +1,13 @@
 package com.parse.starter;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,28 +41,60 @@ import java.util.List;
  */
 public class Matches_Fragment extends Fragment {
 
+    Button CreateGroupButton;
+    View rootview;
+
     // Declare Variables
     ListView listview;
-    //    List<ParseObject> ob;
-//    ProgressDialog mProgressDialog;
     ArrayAdapter<String> adapter;
+    private Button button;
+
+
+
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+
+
+
         //Retrieve two key values
         Bundle bundle = this.getArguments();
         String StrDept = bundle.getString("Dept", "DEFAULT");
         String StrClass = bundle.getString("Class", "DEFAULT");
 
+
+
         //inflate and return the layout
         View v = inflater.inflate(R.layout.matches_layout, container, false);
+
+        //declare reference to createGroupButton
+        CreateGroupButton = (Button) v.findViewById(R.id.create_study_group);
+
         listview = (ListView) v.findViewById(R.id.list);
+
+        CreateGroupButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity().getApplicationContext(), "Test", Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(Matches_Fragment.this.getActivity(), CreateGroup.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+
+
         //       new RemoteDataTask().execute();
         ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("StudyGroups");
         query.whereEqualTo("Department",StrDept);
         query.whereEqualTo("Class", StrClass);
         query.findInBackground(new FindCallback<ParseObject>() {
+
+
             public void done(List<ParseObject> GroupList, ParseException e) {
                 if (e == null) {
                     Log.d("group", "Retrieved " + GroupList.size() + " groups");
@@ -68,11 +102,17 @@ public class Matches_Fragment extends Fragment {
                     adapter = new ArrayAdapter<String>(getView().getContext(), R.layout.listview);
                     final List<String> finalList = new ArrayList<String>();
                     for (ParseObject StudyGroup : GroupList) {
-                        adapter.add(StudyGroup.getString("GroupName"));
+                        adapter.add(StudyGroup.getString("GroupName") + "\n" + "Meeting Date: " + StudyGroup.getString("Month") +
+                                "/" + StudyGroup.getString("Day") + "/" + StudyGroup.getString("Year") + "\n" + "Meeting Time: " +
+                                StudyGroup.getString("Hour") + ":" + StudyGroup.getString("Minute") + " " +
+                                StudyGroup.getString("AMPM"));
                         String objectId = StudyGroup.getObjectId();
                         finalList.add(objectId);
                     }
                     listview.setAdapter(adapter);
+
+
+
                     listview.setOnItemClickListener(new OnItemClickListener() {
 
                         @Override
@@ -90,12 +130,15 @@ public class Matches_Fragment extends Fragment {
                             GroupDetail_Fragment.setArguments(bundle);
                             fragmentManager.beginTransaction()
                                     .replace(R.id.container, GroupDetail_Fragment)
+                                            //back button leads to this page
+                                    .addToBackStack(null)
                                     .commit();
 
                             // Show Alert
                             Toast.makeText(getActivity().getApplicationContext(),
                                     "Position :" + itemPosition + "  ListItem : " + itemValue, Toast.LENGTH_LONG)
                                     .show();
+
                         }
                     });
                 } else {
@@ -103,9 +146,15 @@ public class Matches_Fragment extends Fragment {
                 }
             }
         });
+
+
         return v;
 
+
     }
+
+
+
 }
 
  /*   public class RemoteDataTask extends AsyncTask<Void, Void, Void>{

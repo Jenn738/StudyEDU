@@ -3,5 +3,5 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="5sp"
-    android:textSize="25sp" >
-</TextView><!-- From: file:/Users/yiningchen/Downloads/VersionJuly25/ParseStarterProject/res/layout/listview.xml -->
+    android:textSize="15sp" >
+</TextView><!-- From: file:/Users/jenniferjain/Downloads/ParseStuff/VersionJuly18/ParseStarterProject/res/layout/listview.xml -->

@@ -6,12 +6,6 @@
     android:orientation="vertical"
     android:baselineAligned="false">
 
-    <Button
-        android:id="@+id/create_study_group"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/CreateGroupBtn"/>
-
 
     <TextView
         android:layout_width="match_parent"
@@ -53,4 +47,4 @@
         android:layout_height="wrap_content"
         android:text="@string/button_label" />
 
-</LinearLayout><!-- From: file:/Users/yiningchen/Downloads/VersionJuly25/ParseStarterProject/res/layout/menu1_layout.xml -->
+</LinearLayout><!-- From: file:/Users/jenniferjain/Downloads/ParseStuff/VersionJuly18/ParseStarterProject/res/layout/menu1_layout.xml -->

@@ -68,6 +68,8 @@ public class GroupDetail_Fragment extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //TO DO: increment current number of people in group
+
                 Toast.makeText(getActivity(),
                         "Group joined",
                         Toast.LENGTH_SHORT).show();
