@@ -4,17 +4,10 @@
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
-
-    <Button
-        android:id="@+id/create_study_group"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/CreateGroupBtn"/>
-
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true" />
 
-</LinearLayout><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/matches_layout.xml -->
+</LinearLayout>

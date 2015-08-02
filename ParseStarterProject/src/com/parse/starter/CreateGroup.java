@@ -11,6 +11,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.parse.ParseObject;
+import com.parse.ParseRelation;
 import com.parse.ParseUser;
 
 
@@ -68,9 +69,19 @@ public class CreateGroup extends Activity {
                 NewGroup.put("Loc", LocEditTxt.getText().toString());
                 NewGroup.put("Info", editText.getText().toString());
 
+                // Add relation: group to user
+                ParseRelation relation2 = NewGroup.getRelation("MyMembers");
+                relation2.add(currentUser);
+
                 NewGroup.saveInBackground();
 
-                finish();
+                // Add relation: user to group
+                ParseRelation relation = currentUser.getRelation("MyGroups");
+                relation.add(NewGroup);
+
+                currentUser.saveInBackground();
+
+                //finish();
             }
         });
     }

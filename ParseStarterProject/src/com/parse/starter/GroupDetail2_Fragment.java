@@ -22,13 +22,13 @@ import java.util.List;
 /**
  * Created by yiningchen on 7/26/15.
  */
-public class GroupDetail_Fragment extends Fragment {
+public class GroupDetail2_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Bundle bundle = this.getArguments();
         final String StrGroupID = bundle.getString("GroupID", "DEFAULT");
 
         //inflate and return the layout
-        final View v = inflater.inflate(R.layout.fragment_groupdetail, container, false);
+        final View v = inflater.inflate(R.layout.fragment_groupdetail2, container, false);
         final Button button2;
         button2 = (Button) v.findViewById(R.id.button2);
         button2.setClickable(true);
@@ -63,42 +63,21 @@ public class GroupDetail_Fragment extends Fragment {
                     editText.setText(TargetGroup.getString("Info"));
                     nameEditTxt.setText(TargetGroup.getString("GroupName"));
 
-                    // conditions for able to join group
-
-                    // 1. CurNum < MaxNum
-                    if (TargetGroup.getInt("CurNum")==TargetGroup.getInt("MaxNum"))
-                        button2.setClickable(false);
-
-                    // 2. Current User not already in group
-                    ParseRelation relation = TargetGroup.getRelation("MyMembers");
-                    ParseQuery query2 = relation.getQuery();
-
-                    query2.findInBackground(new FindCallback<ParseObject>() {
-                        public void done(List<ParseObject> userList, ParseException e) {
-                            if (e == null) {
-                                ParseUser user = ParseUser.getCurrentUser();
-                                if (userList.contains(user)) button2.setClickable(false);
-                            } else {
-                                Log.d("query2", "Error: " + e.getMessage());
-                            }
-                        }
-                    });
-
                 } else {
                     // something went wrong
-                    Log.d("group details page ", "Error: " + e.getMessage());
+                    Log.d("group details page 2 ", "Error: " + e.getMessage());
                 }
             }
 
         });
 
-        // Join Group button
+        // Leave Group button
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Toast.makeText(getActivity(),
-                        "Group joined",
+                        "Left Group",
                         Toast.LENGTH_SHORT).show();
 
                 // Create user - group relation
@@ -106,24 +85,24 @@ public class GroupDetail_Fragment extends Fragment {
                 query.getInBackground(StrGroupID, new GetCallback<ParseObject>() {
                     public void done(ParseObject TargetGroup, ParseException e) {
                         if (e == null) {
-                            // add TargetGroup to user
+                            // remove TargetGroup from user
                             ParseUser user = ParseUser.getCurrentUser();
                             ParseRelation relation = user.getRelation("MyGroups");
-                            relation.add(TargetGroup);
+                            relation.remove(TargetGroup);
 
-                            // add user to TargetGroup
+                            // remove user from TargetGroup
                             ParseRelation relation2 = TargetGroup.getRelation("MyMembers");
-                            relation2.add(user);
+                            relation2.remove(user);
 
-                            // increment CurNum
-                            TargetGroup.increment("CurNum");
+                            // decrement CurNum
+                            TargetGroup.increment("CurNum",-1);
 
                             user.saveInBackground();
                             TargetGroup.saveInBackground();
 
                         } else {
                             // something went wrong
-                            Log.d("group details page ", "Error: " + e.getMessage());
+                            Log.d("group details page 2 ", "Error: " + e.getMessage());
                         }
                     }
 

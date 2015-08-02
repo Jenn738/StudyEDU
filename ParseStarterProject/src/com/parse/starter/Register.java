@@ -65,25 +65,7 @@ public class Register extends Activity {
                         } else if (usernametxt.contains("@")) {
                             Toast.makeText(getApplicationContext(), "Please enter the part before @dartmouth.edu only", Toast.LENGTH_LONG).show();
                         } else {
-                     /*       Mail m = new Mail("dartmapthem@gmail.com", "******");
 
-                            String[] toArr = {usernametxt + "@dartmouth.com"};
-                            m.setTo(toArr);
-                            m.setFrom("Dartmouth_Study_Buddies");
-                            m.setSubject("Email_Verification_Code");
-                            m.setBody(Integer.toString(secretcode));
-
-                            try {
-
-                                if (m.send()) {
-                                    Toast.makeText(getApplicationContext(), "Verification code sent. Please check your email inbox and/or junk-mail box.", Toast.LENGTH_LONG).show();
-                                } else {
-                                    Toast.makeText(getApplicationContext(), "Code was not sent.", Toast.LENGTH_LONG).show();
-                                }
-                            } catch (Exception e) {
-                                //Toast.makeText(MailApp.this, "There was a problem sending the email.", Toast.LENGTH_LONG).show();
-                                Log.e("MailApp", "Could not send email", e);
-                            }*/
                             // Recipient's email ID needs to be mentioned.
                             String to = usernametxt + "@dartmouth.com";
 
