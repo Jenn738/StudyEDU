@@ -35,6 +35,15 @@ public class NavigationActivity extends FragmentActivity
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+//
+//    @Override
+//    public void onBackPressed() {
+//        if (getFragmentManager().getBackStackEntryCount() == 0) {
+//            this.finish();
+//        } else {
+//            getFragmentManager().popBackStack();
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
