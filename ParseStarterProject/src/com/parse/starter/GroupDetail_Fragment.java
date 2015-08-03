@@ -128,7 +128,7 @@ public class GroupDetail_Fragment extends Fragment {
                     }
 
                 });
-
+                button2.setClickable(false);
             }
         });
 

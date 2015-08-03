@@ -102,7 +102,7 @@ public class Matches_Fragment extends Fragment {
                     adapter = new ArrayAdapter<String>(getView().getContext(), R.layout.listview);
                     final List<String> finalList = new ArrayList<String>();
                     for (ParseObject StudyGroup : GroupList) {
-                        adapter.add(StudyGroup.getString("GroupName") + "\n" + "Meeting Date: " + StudyGroup.getString("Month") +
+                        adapter.add(StudyGroup.getString("GroupName") + " ("+StudyGroup.getInt("CurNum") +"/"+StudyGroup.getInt("MaxNum")+")\n" + "Meeting Date: " + StudyGroup.getString("Month") +
                                 "/" + StudyGroup.getString("Day") + "/" + StudyGroup.getString("Year") + "\n" + "Meeting Time: " +
                                 StudyGroup.getString("Hour") + ":" + StudyGroup.getString("Minute") + " " +
                                 StudyGroup.getString("AMPM"));

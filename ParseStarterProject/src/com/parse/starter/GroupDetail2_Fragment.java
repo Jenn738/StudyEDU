@@ -107,7 +107,7 @@ public class GroupDetail2_Fragment extends Fragment {
                     }
 
                 });
-
+                button2.setClickable(false);
             }
         });
 
