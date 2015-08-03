@@ -63,6 +63,28 @@ public class GroupDetail2_Fragment extends Fragment {
                     editText.setText(TargetGroup.getString("Info"));
                     nameEditTxt.setText(TargetGroup.getString("GroupName"));
 
+                    ParseRelation relation = TargetGroup.getRelation("MyMembers");
+                    ParseQuery query2 = relation.getQuery();
+
+                    query2.findInBackground(new FindCallback<ParseObject>() {
+                        public void done(List<ParseObject> userList, ParseException e) {
+                            if (e == null) {
+                                TextView curMem;
+                                curMem = (TextView) v.findViewById(R.id.curMem);
+                                String MemList = "";
+                                boolean isFirst = true;
+                                for (ParseObject curMemX : userList) {
+                                    if (!isFirst) MemList = MemList + "\n";
+                                    isFirst = false;
+                                    MemList = MemList + ((ParseUser) curMemX).getUsername();
+                                }
+                                curMem.setText(MemList);
+                            } else {
+                                Log.d("query2", "Error: " + e.getMessage());
+                            }
+                        }
+                    });
+
                 } else {
                     // something went wrong
                     Log.d("group details page 2 ", "Error: " + e.getMessage());
@@ -76,9 +98,9 @@ public class GroupDetail2_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getActivity(),
-                        "Left Group",
-                        Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(),
+                //        "Left Group",
+                //        Toast.LENGTH_SHORT).show();
 
                 // Create user - group relation
                 ParseQuery<ParseObject> query = ParseQuery.getQuery("StudyGroups");
@@ -107,6 +129,7 @@ public class GroupDetail2_Fragment extends Fragment {
                     }
 
                 });
+                button2.setText("Left Group");
                 button2.setClickable(false);
             }
         });

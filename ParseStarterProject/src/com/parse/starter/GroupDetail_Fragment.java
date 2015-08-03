@@ -6,9 +6,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ListView;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -18,6 +20,7 @@ import com.parse.ParseUser;
 import com.parse.ParseRelation;
 import com.parse.GetCallback;
 
+import java.util.ArrayList;
 import java.util.List;
 /**
  * Created by yiningchen on 7/26/15.
@@ -42,6 +45,8 @@ public class GroupDetail_Fragment extends Fragment {
 
                     TextView dept, course, spinnerDate, spinnerHour, spinnerMaxNum;
                     TextView LocEditTxt, editText, nameEditTxt, CurNum;
+
+
                     dept = (TextView) v.findViewById(R.id.spinner1);
                     course = (TextView) v.findViewById(R.id.spinner2);
                     spinnerDate = (TextView) v.findViewById(R.id.date);
@@ -51,6 +56,7 @@ public class GroupDetail_Fragment extends Fragment {
                     editText = (TextView) v.findViewById(R.id.editText);
                     nameEditTxt = (TextView) v.findViewById(R.id.nameEditTxt);
                     CurNum = (TextView) v.findViewById(R.id.CurNum);
+
                     dept.setText(TargetGroup.getString("Department"));
                     course.setText(TargetGroup.getString("Class"));
                     spinnerDate.setText(TargetGroup.getString("Month") + "/" + TargetGroup.getString("Day") + "/" + TargetGroup.getString("Year"));
@@ -66,8 +72,10 @@ public class GroupDetail_Fragment extends Fragment {
                     // conditions for able to join group
 
                     // 1. CurNum < MaxNum
-                    if (TargetGroup.getInt("CurNum")==TargetGroup.getInt("MaxNum"))
+                    if (TargetGroup.getInt("CurNum")==TargetGroup.getInt("MaxNum")) {
                         button2.setClickable(false);
+                        button2.setText("Group Full");
+                    }
 
                     // 2. Current User not already in group
                     ParseRelation relation = TargetGroup.getRelation("MyMembers");
@@ -77,7 +85,21 @@ public class GroupDetail_Fragment extends Fragment {
                         public void done(List<ParseObject> userList, ParseException e) {
                             if (e == null) {
                                 ParseUser user = ParseUser.getCurrentUser();
-                                if (userList.contains(user)) button2.setClickable(false);
+                                if (userList.contains(user)) {
+                                    button2.setClickable(false);
+                                    button2.setText("Group joined");
+                                }
+
+                                TextView curMem;
+                                curMem = (TextView) v.findViewById(R.id.curMem);
+                                String MemList="";
+                                boolean isFirst=true;
+                                for (ParseObject curMemX : userList) {
+                                    if (!isFirst)  MemList = MemList+"\n";
+                                    isFirst = false;
+                                    MemList = MemList + ((ParseUser) curMemX).getUsername();
+                                }
+                                curMem.setText(MemList);
                             } else {
                                 Log.d("query2", "Error: " + e.getMessage());
                             }
@@ -97,9 +119,9 @@ public class GroupDetail_Fragment extends Fragment {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(getActivity(),
-                        "Group joined",
-                        Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getActivity(),
+                //        "Group joined",
+                //        Toast.LENGTH_SHORT).show();
 
                 // Create user - group relation
                 ParseQuery<ParseObject> query = ParseQuery.getQuery("StudyGroups");
@@ -128,6 +150,7 @@ public class GroupDetail_Fragment extends Fragment {
                     }
 
                 });
+                button2.setText("Group joined");
                 button2.setClickable(false);
             }
         });

@@ -28,33 +28,12 @@
         android:layout_alignParentRight="true"
         android:text="@string/Emailsuffix"/>
 
-    <Button
-        android:id="@+id/sendemail"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/sendemail"
-        android:layout_below="@+id/email"/>
-
-    <TextView
-        android:id="@+id/verificationcodetxt"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/verificationcodetxt"
-        android:layout_below="@+id/sendemail"/>
-
-    <EditText
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:layout_below="@+id/verificationcodetxt"
-        android:id="@+id/verificationcode"/>
-
     <TextView
         android:id="@+id/txtpassword"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/Password"
-        android:layout_below="@+id/verificationcode"/>
+        android:layout_below="@+id/email"/>
 
     <EditText
         android:layout_width="fill_parent"
@@ -81,6 +60,6 @@
         android:id="@+id/signup"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/signup"
+        android:text="Send Verification Email"
         android:layout_below="@+id/password2"/>
 </RelativeLayout>

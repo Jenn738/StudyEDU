@@ -53,14 +53,17 @@ public class LoginSignupActivity extends Activity {
                         new LogInCallback() {
                             public void done(ParseUser user, ParseException e) {
                                 if (user != null) {
-                                    // If user exist and authenticated, send user to Welcome.class
-                                    Intent intent = new Intent(LoginSignupActivity.this,NavigationActivity.class);
-                                    startActivity(intent);
-                                    Toast.makeText(getApplicationContext(),"Successfully Logged in",Toast.LENGTH_LONG).show();
-                                    finish();
-
+                                    if (!(user.getBoolean("emailVerified")==true)) {
+                                        Toast.makeText(getApplicationContext(),"Please check your mailbox and click on the link we sent you to verify your email.",Toast.LENGTH_LONG).show();
+                                    } else {
+                                        // If user exist and authenticated, send user to Welcome.class
+                                        Intent intent = new Intent(LoginSignupActivity.this, NavigationActivity.class);
+                                        startActivity(intent);
+                                        Toast.makeText(getApplicationContext(), "Successfully Logged in", Toast.LENGTH_LONG).show();
+                                        finish();
+                                     }
                                 } else {
-                                    Toast.makeText(getApplicationContext(),"No such user exist, please register",Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext(),"Email/Password pair incorrect, please register",Toast.LENGTH_LONG).show();
                                 }
                             }
                         });
