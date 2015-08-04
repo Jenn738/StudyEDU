@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
+    <!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="am_or_pm">
         <item>AM</item>
@@ -420,12 +420,12 @@
         <item>2024</item>
         <item>2025</item>
     </string-array>
-    <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/dimens.xml -->
+    <!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="navigation_drawer_width">240dp</dimen>
-    <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
+    <!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="CreateGroupBtn">Create a Study Group</string>
     <string name="Emailsuffix">"@dartmouth.edu"</string>
@@ -438,7 +438,7 @@
     <string name="action_example">Example action</string>
     <string name="action_logout">Log Out</string>
     <string name="action_settings">Settings</string>
-    <string name="app_name">Dartmouth Study Buddies (^o^)</string>
+    <string name="app_name">StudyEDU</string>
     <string name="button_label">Submit</string>
     <string name="hello">Hello World!</string>
     <string name="hello_world">Hello world!</string>
@@ -453,7 +453,7 @@
     <string name="title_activity_create_group">CreateGroup</string>
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="title_activity_spinners_menu">SpinnersMenu</string>
-    <string name="title_section1">Create or Find a Group</string>
+    <string name="title_section1">Find a Group</string>
     <string name="title_section2">My Groups</string>
     <string name="title_section3">Section 3</string>
     <string name="toggle">Toggle View</string>

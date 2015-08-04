@@ -8,23 +8,31 @@
         android:layout_height="fill_parent"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Group Details"
-            android:id="@+id/ClassTxt"
-            android:layout_gravity="center_horizontal"/>
+            android:id="@+id/nameEditTxt"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:padding="7dp"/>
 
-        <RelativeLayout
+
+        <LinearLayout
             android:id="@+id/ReleSpinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/spinner1"
-                />
+                android:gravity="right"
+                android:paddingRight="5dp"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -32,105 +40,209 @@
                 android:id="@+id/spinner2"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="195dp"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
                 />
-        </RelativeLayout>
+        </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/dateBund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Group Name"
-            android:id="@+id/nameTxt" />
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/dateImage"
+            android:src="@drawable/iconholder"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/nameEditTxt"
-            android:layout_gravity="center_horizontal" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Time (Month/Day/Year)"
-            android:id="@+id/dateTxt" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/date" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Time (Hour:Minutes:AM/PM)"
-            android:id="@+id/hourTxt" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/hour" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Location"
-            android:id="@+id/LocationTxt" />
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/LocEditTxt"
-            android:layout_gravity="center_horizontal"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Current number of members"
-            android:id="@+id/CurNumTxt" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Current number of members"
-            android:id="@+id/CurNum" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Maximum number of members"
-            android:id="@+id/numTxt" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerMaxNum" />
+            android:id="@+id/date"
+            android:layout_toRightOf="@id/dateImage"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:paddingTop="3dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timeBund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/timeImage"
+            android:src="@drawable/iconholder"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"/>
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Current members"
-            android:id="@+id/curMemTxt" />
+            android:id="@+id/hour"
+            android:layout_toRightOf="@id/timeImage"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:paddingTop="3dp"
+            android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/locBund"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/locImage"
+            android:src="@drawable/iconholder"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"/>
 
         <TextView
-            android:id="@+id/curMem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Additional Information"
-            android:id="@+id/InfoTxt" />
+            android:id="@+id/LocEditTxt"
+            android:layout_toRightOf="@id/locImage"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:paddingTop="3dp"
+            android:gravity="center"/>
+    </RelativeLayout>
 
-        <TextView
+
+        <RelativeLayout
+            android:id="@+id/memBund"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:layout_gravity="center_horizontal" />
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/memImage"
+                android:src="@drawable/iconholder"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Current Members"
+                android:id="@+id/curMemTxt"
+                android:paddingTop="8dp"
+                android:layout_toRightOf="@id/memImage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="("
+                android:id="@+id/bracket1"
+                android:layout_toRightOf="@id/curMemTxt"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:paddingTop="8dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/CurNum"
+                android:layout_toRightOf="@id/bracket1"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/slash"
+                android:text="/"
+                android:layout_toRightOf="@id/CurNum"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnerMaxNum"
+                android:layout_toRightOf="@id/slash"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=")"
+                android:id="@+id/bracket2"
+                android:layout_toRightOf="@id/spinnerMaxNum"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/curMem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_toRightOf="@id/memImage"
+                android:layout_below="@id/curMemTxt"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/infoBund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/infoImage"
+                android:src="@drawable/iconholder"
+                android:layout_weight="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Additional Information"
+                android:layout_toRightOf="@id/infoImage"
+                android:id="@+id/InfoTxt"
+                android:paddingTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_toRightOf="@id/InfoTxt"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:paddingTop="3dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
 
         <Button
             android:layout_width="wrap_content"

@@ -3,4 +3,4 @@
     android:layout_height="match_parent" android:choiceMode="singleChoice"
     android:divider="@android:color/transparent" android:dividerHeight="0dp"
     android:background="#cccc" tools:context="com.parse.starter.NavigationDrawerFragment" />
-<!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/fragment_navigation_drawer.xml -->
+<!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/layout/fragment_navigation_drawer.xml -->

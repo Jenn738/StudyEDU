@@ -4,14 +4,10 @@
 <!--    <item android:id="@+id/action_example" android:title="@string/action_example"
         android:showAsAction="withText|ifRoom" /> -->
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/action_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never" />
     <item
         android:id="@+id/action_logout"
         android:title="@string/action_logout"
         android:orderInCategory="100"
         android:showAsAction="never"
         />
-</menu><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/menu/navigation.xml -->
+</menu><!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/menu/navigation.xml -->

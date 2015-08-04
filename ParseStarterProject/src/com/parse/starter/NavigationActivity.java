@@ -90,9 +90,6 @@ public class NavigationActivity extends FragmentActivity
             case 2:
                 mTitle = getString(R.string.title_section2);
                 break;
-            case 3:
-                mTitle = getString(R.string.title_section3);
-                break;
         }
     }
 
@@ -124,10 +121,10 @@ public class NavigationActivity extends FragmentActivity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
         //if the log out button is selected, log out of Parse and go back to log in page
         if (id == R.id.action_logout) {
             ParseUser.logOut();
