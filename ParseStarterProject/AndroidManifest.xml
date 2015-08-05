@@ -47,7 +47,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginSignupActivity" />
-        <activity android:name=".Welcome" />
         <activity android:name=".Register" />
         <activity
             android:name=".NavigationActivity"

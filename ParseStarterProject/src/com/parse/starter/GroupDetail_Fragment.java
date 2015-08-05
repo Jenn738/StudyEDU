@@ -19,6 +19,7 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.ParseRelation;
 import com.parse.GetCallback;
+import com.parse.SaveCallback;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -126,22 +127,36 @@ public class GroupDetail_Fragment extends Fragment {
                 // Create user - group relation
                 ParseQuery<ParseObject> query = ParseQuery.getQuery("StudyGroups");
                 query.getInBackground(StrGroupID, new GetCallback<ParseObject>() {
-                    public void done(ParseObject TargetGroup, ParseException e) {
+                    public void done(final ParseObject TargetGroup, ParseException e) {
                         if (e == null) {
                             // add TargetGroup to user
-                            ParseUser user = ParseUser.getCurrentUser();
+                            final ParseUser user = ParseUser.getCurrentUser();
                             ParseRelation relation = user.getRelation("MyGroups");
                             relation.add(TargetGroup);
+                            user.saveInBackground();
 
-                            // add user to TargetGroup
                             ParseRelation relation2 = TargetGroup.getRelation("MyMembers");
                             relation2.add(user);
-
-                            // increment CurNum
-                            TargetGroup.increment("CurNum");
-
-                            user.saveInBackground();
-                            TargetGroup.saveInBackground();
+                            TargetGroup.setObjectId(StrGroupID);
+                            TargetGroup.saveInBackground(new SaveCallback() {
+                                @Override
+                                public void done(ParseException e) {
+                                    if (e == null) {
+                                        // increment CurNum
+                                        TargetGroup.increment("CurNum");
+                                        TargetGroup.saveInBackground(new SaveCallback() {
+                                            @Override
+                                            public void done(ParseException e) {
+                                                //dummy
+                                                if (e == null)
+                                                    System.out.println("group joined!!!");
+                                            }
+                                        });
+                                    } else {
+                                        Log.d("weird!!!", "Error: " + e.getMessage());
+                                    }
+                                }
+                            });
 
                         } else {
                             // something went wrong

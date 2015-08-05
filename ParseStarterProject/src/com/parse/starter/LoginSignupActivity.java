@@ -56,7 +56,7 @@ public class LoginSignupActivity extends Activity {
                                     if (!(user.getBoolean("emailVerified")==true)) {
                                         Toast.makeText(getApplicationContext(),"Please check your mailbox and click on the link we sent you to verify your email.",Toast.LENGTH_LONG).show();
                                     } else {
-                                        // If user exist and authenticated, send user to Welcome.class
+                                        // If user exist and authenticated, send user to NavigationActivity.class
                                         Intent intent = new Intent(LoginSignupActivity.this, NavigationActivity.class);
                                         startActivity(intent);
                                         Toast.makeText(getApplicationContext(), "Successfully Logged in", Toast.LENGTH_LONG).show();

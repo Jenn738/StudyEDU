@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ParseStarterProject/ParseStarterProject.iml" filepath="$PROJECT_DIR$/ParseStarterProject/ParseStarterProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/VersionAugUpd.iml" filepath="$PROJECT_DIR$/VersionAugUpd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VersionJuly18.iml" filepath="$PROJECT_DIR$/VersionJuly18.iml" />
     </modules>
   </component>
 </project>

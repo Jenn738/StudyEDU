@@ -9,10 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.util.Log;
 
+import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseRelation;
 import com.parse.ParseUser;
+import com.parse.SaveCallback;
 
 
 public class CreateGroup extends Activity {
@@ -50,9 +53,9 @@ public class CreateGroup extends Activity {
                         "Group created",
                         Toast.LENGTH_SHORT).show();
 
-                ParseUser currentUser = ParseUser.getCurrentUser();
+                final ParseUser currentUser = ParseUser.getCurrentUser();
 
-                ParseObject NewGroup = new ParseObject("StudyGroups");
+                final ParseObject NewGroup = new ParseObject("StudyGroups");
 
                 NewGroup.put("GroupName", nameEditTxt.getText().toString());
                 NewGroup.put("Founder", currentUser.getUsername());
@@ -68,43 +71,45 @@ public class CreateGroup extends Activity {
                 NewGroup.put("CurNum",1);
                 NewGroup.put("Loc", LocEditTxt.getText().toString());
                 NewGroup.put("Info", editText.getText().toString());
+                NewGroup.saveInBackground(new SaveCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        if (e == null) {
+                            //myObjectSavedSuccessfully();
 
-                // Add relation: group to user
-                ParseRelation relation2 = NewGroup.getRelation("MyMembers");
-                relation2.add(currentUser);
+                            // Add relation: user to group
+                            ParseRelation relation = currentUser.getRelation("MyGroups");
+                            relation.add(NewGroup);
+                            currentUser.saveInBackground(new SaveCallback() {
+                                @Override
+                                public void done(ParseException e) {
+                                    if (e == null) {
+                                        // Add relation: group to user
+                                        ParseRelation relation2 = NewGroup.getRelation("MyMembers");
+                                        relation2.add(currentUser);
+                                        NewGroup.saveInBackground(new SaveCallback() {
+                                            @Override
+                                            public void done(ParseException e) {
+                                                if (e == null)
+                                                    System.out.println("group joined!!!");
+                                            }
+                                        });
+                                    } else {
+                                        Log.d("weird 2!!!", "Error: " + e.getMessage());
+                                    }
+                                }
+                            });
 
-                NewGroup.saveInBackground();
-
-                // Add relation: user to group
-                ParseRelation relation = currentUser.getRelation("MyGroups");
-                relation.add(NewGroup);
-
-                currentUser.saveInBackground();
+                        } else {
+                            //myObjectSaveDidNotSucceed();
+                            Log.d("weird 1!!!", "Error: " + e.getMessage());
+                        }
+                    }
+                });
 
                 //finish();
             }
         });
     }
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_create_group, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }*/
 }

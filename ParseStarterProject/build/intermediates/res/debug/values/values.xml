@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/values/strings.xml -->
+    <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string-array name="am_or_pm">
         <item>AM</item>
@@ -420,12 +420,12 @@
         <item>2024</item>
         <item>2025</item>
     </string-array>
-    <!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/values/dimens.xml -->
+    <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="navigation_drawer_width">240dp</dimen>
-    <!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionAugUpd/ParseStarterProject/res/values/strings.xml -->
+    <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
     <eat-comment/>
     <string name="CreateGroupBtn">Create a Study Group</string>
     <string name="Emailsuffix">"@dartmouth.edu"</string>

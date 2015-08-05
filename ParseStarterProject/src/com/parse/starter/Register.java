@@ -81,7 +81,7 @@ public class Register extends Activity {
                                 // Show a simple Toast message upon successful registration
                                 Toast.makeText(getApplicationContext(), "Please check your mailbox and click on the link we sent you to verify your email.", Toast.LENGTH_LONG).show();
 
-                                // If user exist and authenticated, send user to Welcome.class
+                                // If user exist and authenticated, send user to NavigationActivity.class
                                 //Intent intent = new Intent(Register.this,NavigationActivity.class);
                                 //startActivity(intent);
                                 finish();

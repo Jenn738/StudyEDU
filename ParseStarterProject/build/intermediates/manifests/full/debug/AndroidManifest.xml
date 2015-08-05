@@ -47,7 +47,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.parse.starter.LoginSignupActivity" />
-        <activity android:name="com.parse.starter.Welcome" />
         <activity android:name="com.parse.starter.Register" />
         <activity
             android:name="com.parse.starter.NavigationActivity"
