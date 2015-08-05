@@ -56,8 +56,4 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/login"
         android:text="@string/RegisterBtn"/>
-<<<<<<< HEAD
-</RelativeLayout><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/loginsignup.xml -->
-=======
 </RelativeLayout><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/loginsignup.xml -->
->>>>>>> origin/master

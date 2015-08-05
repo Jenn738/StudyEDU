@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<merger version="3"><dataSet config="22.2.0"><source path="/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/assets"/></dataSet><dataSet config="main"><source path="/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/src/main/assets"/></dataSet><dataSet config="debug"><source path="/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/src/debug/assets"/></dataSet></merger>
-=======
 <merger version="3"><dataSet config="22.2.0"><source path="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/assets"/></dataSet><dataSet config="main"><source path="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/src/main/assets"/></dataSet><dataSet config="debug"><source path="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/src/debug/assets"/></dataSet></merger>
->>>>>>> origin/master

@@ -49,29 +49,46 @@ public class CreateGroup extends Activity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),
+                // check if both name and location fields are unfilled
+                if (nameEditTxt.getText().toString().equals("") && LocEditTxt.getText().toString().equals("")) {
+                    // make notification to fill in both fields
+                    Toast.makeText(getApplicationContext(), "Please fill in name and location fields!", Toast.LENGTH_LONG).show();
+                }
+                // check if only name is unfilled
+                else if (nameEditTxt.getText().toString().equals("")) {
+                    // make notification to fill in name field
+                    Toast.makeText(getApplicationContext(), "Please fill in group name!", Toast.LENGTH_LONG).show();
+                }
+                // check if only location is unfilled
+                else if (LocEditTxt.getText().toString().equals("")) {
+                    // make notification to fill in location field
+                    Toast.makeText(getApplicationContext(), "Please fill in meeting location!", Toast.LENGTH_LONG).show();
+                }
+                // otherwise the group should be able to be created with all the necessary information
+                else {
+                    Toast.makeText(getApplicationContext(),
                         "Group created",
                         Toast.LENGTH_SHORT).show();
 
-                final ParseUser currentUser = ParseUser.getCurrentUser();
+                    final ParseUser currentUser = ParseUser.getCurrentUser();
 
-                final ParseObject NewGroup = new ParseObject("StudyGroups");
+                    final ParseObject NewGroup = new ParseObject("StudyGroups");
 
-                NewGroup.put("GroupName", nameEditTxt.getText().toString());
-                NewGroup.put("Founder", currentUser.getUsername());
-                NewGroup.put("Department", String.valueOf(spinner1.getSelectedItem()));
-                NewGroup.put("Class", String.valueOf(spinner2.getSelectedItem()));
-                NewGroup.put("Month", String.valueOf(spinnerMonth.getSelectedItem()));
-                NewGroup.put("Day", String.valueOf(spinnerDay.getSelectedItem()));
-                NewGroup.put("Year", String.valueOf(spinnerYear.getSelectedItem()));
-                NewGroup.put("Hour", String.valueOf(spinnerHour.getSelectedItem()));
-                NewGroup.put("Minute", String.valueOf(spinnerMinute.getSelectedItem()));
-                NewGroup.put("AMPM", String.valueOf(spinnerAMPM.getSelectedItem()));
-                NewGroup.put("MaxNum", Integer.parseInt(String.valueOf(spinnerMaxNum.getSelectedItem())));
-                NewGroup.put("CurNum",1);
-                NewGroup.put("Loc", LocEditTxt.getText().toString());
-                NewGroup.put("Info", editText.getText().toString());
-                NewGroup.saveInBackground(new SaveCallback() {
+                    NewGroup.put("GroupName", nameEditTxt.getText().toString());
+                    NewGroup.put("Founder", currentUser.getUsername());
+                    NewGroup.put("Department", String.valueOf(spinner1.getSelectedItem()));
+                    NewGroup.put("Class", String.valueOf(spinner2.getSelectedItem()));
+                    NewGroup.put("Month", String.valueOf(spinnerMonth.getSelectedItem()));
+                    NewGroup.put("Day", String.valueOf(spinnerDay.getSelectedItem()));
+                    NewGroup.put("Year", String.valueOf(spinnerYear.getSelectedItem()));
+                    NewGroup.put("Hour", String.valueOf(spinnerHour.getSelectedItem()));
+                    NewGroup.put("Minute", String.valueOf(spinnerMinute.getSelectedItem()));
+                    NewGroup.put("AMPM", String.valueOf(spinnerAMPM.getSelectedItem()));
+                    NewGroup.put("MaxNum", Integer.parseInt(String.valueOf(spinnerMaxNum.getSelectedItem())));
+                    NewGroup.put("CurNum", 1);
+                    NewGroup.put("Loc", LocEditTxt.getText().toString());
+                    NewGroup.put("Info", editText.getText().toString());
+                    NewGroup.saveInBackground(new SaveCallback() {
                     @Override
                     public void done(ParseException e) {
                         if (e == null) {
@@ -108,6 +125,7 @@ public class CreateGroup extends Activity {
                 });
 
                 //finish();
+                }
             }
         });
     }
