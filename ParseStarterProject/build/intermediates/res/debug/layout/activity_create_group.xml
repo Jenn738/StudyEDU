@@ -191,4 +191,8 @@
         android:layout_gravity="center_horizontal" />
 
 
+<<<<<<< HEAD
 </LinearLayout><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/activity_create_group.xml -->
+=======
+</LinearLayout><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/activity_create_group.xml -->
+>>>>>>> origin/master

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values-w820dp/dimens.xml -->
+=======
+    <!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/values-w820dp/dimens.xml -->
+>>>>>>> origin/master
     <eat-comment/>
     <dimen name="activity_horizontal_margin">64dp</dimen>
 </resources>

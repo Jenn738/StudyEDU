@@ -251,4 +251,8 @@
             android:id="@+id/button2"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
+<<<<<<< HEAD
 </ScrollView><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/fragment_groupdetail.xml -->
+=======
+</ScrollView><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/fragment_groupdetail.xml -->
+>>>>>>> origin/master

@@ -62,4 +62,8 @@
         android:layout_height="wrap_content"
         android:text="Send Verification Email"
         android:layout_below="@+id/password2"/>
+<<<<<<< HEAD
 </RelativeLayout><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/register.xml -->
+=======
+</RelativeLayout><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/register.xml -->
+>>>>>>> origin/master

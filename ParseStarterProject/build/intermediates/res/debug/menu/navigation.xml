@@ -10,4 +10,8 @@
         android:orderInCategory="100"
         android:showAsAction="never"
         />
+<<<<<<< HEAD
 </menu><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/menu/navigation.xml -->
+=======
+</menu><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/menu/navigation.xml -->
+>>>>>>> origin/master

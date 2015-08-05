@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
+=======
+    <!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
+>>>>>>> origin/master
     <eat-comment/>
     <string-array name="am_or_pm">
         <item>AM</item>
@@ -420,12 +424,20 @@
         <item>2024</item>
         <item>2025</item>
     </string-array>
+<<<<<<< HEAD
     <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/dimens.xml -->
+=======
+    <!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/values/dimens.xml -->
+>>>>>>> origin/master
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="navigation_drawer_width">240dp</dimen>
+<<<<<<< HEAD
     <!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
+=======
+    <!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/values/strings.xml -->
+>>>>>>> origin/master
     <eat-comment/>
     <string name="CreateGroupBtn">Create a Study Group</string>
     <string name="Emailsuffix">"@dartmouth.edu"</string>

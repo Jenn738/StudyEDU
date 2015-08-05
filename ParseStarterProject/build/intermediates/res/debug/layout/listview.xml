@@ -3,4 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:padding="5sp">
+<<<<<<< HEAD
 </TextView><!-- From: file:/Users/yiningchen/Desktop/StudyGroup/VersionJuly18/ParseStarterProject/res/layout/listview.xml -->
+=======
+</TextView><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/listview.xml -->
+>>>>>>> origin/master
