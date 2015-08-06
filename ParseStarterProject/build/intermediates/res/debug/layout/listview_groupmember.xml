@@ -5,4 +5,4 @@ android:layout_width="fill_parent"
 android:layout_height="wrap_content"
 android:padding="3sp"
 android:textSize="15sp" >
-</TextView><!-- From: file:/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/res/layout/listview_groupmember.xml -->
+</TextView><!-- From: file:/Users/yiningchen/Desktop/VersionJuly18/ParseStarterProject/res/layout/listview_groupmember.xml -->

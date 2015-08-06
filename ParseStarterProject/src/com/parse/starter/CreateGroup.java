@@ -66,9 +66,11 @@ public class CreateGroup extends Activity {
                 }
                 // otherwise the group should be able to be created with all the necessary information
                 else {
-                    Toast.makeText(getApplicationContext(),
-                        "Group created",
-                        Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),
+                    //    "Group created",
+                    //    Toast.LENGTH_SHORT).show();
+                    button2.setText("Group Created");
+                    button2.setClickable(false);
 
                     final ParseUser currentUser = ParseUser.getCurrentUser();
 
