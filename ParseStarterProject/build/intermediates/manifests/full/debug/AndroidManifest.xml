@@ -56,6 +56,9 @@
             android:name="com.parse.starter.CreateGroup"
             android:label="@string/title_activity_create_group" >
         </activity>
+        <activity
+            android:name="android.support.v7.widget.TestActivity"
+            android:label="RecyclerViewTestActivity" />
     </application>
 
 </manifest>

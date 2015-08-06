@@ -52,6 +52,7 @@ public class Matches_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
 
+
         //Retrieve two key values
         Bundle bundle = this.getArguments();
         String StrDept = bundle.getString("Dept", "DEFAULT");

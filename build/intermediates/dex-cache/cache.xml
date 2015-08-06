@@ -2,67 +2,67 @@
 <items version="2" >
 
     <item
-        jar="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
+        jar="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/libs/internal_impl-22.2.0.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-03e45b5f39f538ce341b2e813c8d92e4fbdfeb3e.jar" />
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-1881fb87ea358c4ad85c850472865ce0ab2008c9.jar" />
     </item>
     <item
-        jar="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/libs/ParseCrashReporting-1.9.2.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="83f3b1e397f1cc3f05cb9db078d9e364b5f5e218">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.2-cf9e076bc8b0f2b58095257f679c20a5e3cf5cce.jar" />
-    </item>
-    <item
-        jar="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/libs/additionnal.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/additionnal-6f55ed152a03af6b875c5001dad170311c2d86d7.jar" />
-    </item>
-    <item
-        jar="/Users/nanhu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-0c2cd5207eceec7a0df60df4ab62c3739da7e741.jar" />
-    </item>
-    <item
-        jar="/Users/nanhu/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-fe1098e4e079cbe1d33d3ecdf848a3f0b6959397.jar" />
-    </item>
-    <item
-        jar="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/libs/javax.mail.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="7e22a1be948f666bb0206e782c03b129dfcdf016">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/javax.mail-f457fdc5d51c300176301940e611b29463209207.jar" />
-    </item>
-    <item
-        jar="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/libs/activation.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="8acf42612ad530a4fbf4058982555394298b4ed8">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/activation-781b6b68c31fb618fac5a870fc37c0c64eb5cb1c.jar" />
-    </item>
-    <item
-        jar="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.0"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-39efb14a2b4e29547dff88683e21e4fabf7da79f.jar" />
-    </item>
-    <item
-        jar="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/libs/Parse-1.9.2.jar"
+        jar="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/libs/Parse-1.9.2.jar"
         jumboMode="false"
         revision="22.0.0"
         sha1="fe739334780fe321141e62720822c2d456061899">
-        <dex dex="/Users/nanhu/AndroidStudioProjects/VersionJuly18/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.9.2-aa367154c3ca26476a58cace52c2110150b13a12.jar" />
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/Parse-1.9.2-71d0c8f1c8d97856d12fbd1e651af16e09a343a1.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/libs/javax.mail.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="7e22a1be948f666bb0206e782c03b129dfcdf016">
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/javax.mail-6b8cf68ad0abc6a0caf0b6ee7ee210f5de6f1426.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/libs/additionnal.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/additionnal-cb209a486de5a25810bd2e5e07e32e76f9dc437b.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-638925ecc8bcba80fb7d808ddf0c958b4babc043.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/libs/activation.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="8acf42612ad530a4fbf4058982555394298b4ed8">
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/activation-a78f846dcb3dfd51cb94387b2ba829b823f56157.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/libs/ParseCrashReporting-1.9.2.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="83f3b1e397f1cc3f05cb9db078d9e364b5f5e218">
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/ParseCrashReporting-1.9.2-3b43e34ecc6d87f5ecf3152ea14e452f693333d1.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-1575f3d9bf76cceebe073653faa5377bc2d56a16.jar" />
+    </item>
+    <item
+        jar="/Users/jenniferjain/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        revision="22.0.0"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/build/intermediates/pre-dexed/debug/bolts-android-1.2.0-eb27381e00593713b99ff3ddd2172337739d30bb.jar" />
     </item>
 
 </items>

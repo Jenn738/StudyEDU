@@ -14,6 +14,7 @@ int drawable drawer_shadow 0x7f020000
 int drawable ic_drawer 0x7f020001
 int drawable ic_launcher 0x7f020002
 int drawable iconholder 0x7f020003
+int drawable infoimg 0x7f020004
 int id ClassTxt 0x7f080000
 int id CurNum 0x7f080025
 int id InfoTxt 0x7f080013
@@ -21,8 +22,8 @@ int id LocEditTxt 0x7f080012
 int id LocationTxt 0x7f080011
 int id ReleSpinner 0x7f080001
 int id TimeTxt 0x7f08000a
-int id action_logout 0x7f080044
-int id action_settings 0x7f080043
+int id action_logout 0x7f080043
+int id action_settings 0x7f080044
 int id bracket1 0x7f080024
 int id bracket2 0x7f080027
 int id button 0x7f080036

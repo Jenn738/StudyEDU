@@ -46,6 +46,8 @@ public class CreateGroup extends Activity {
         editText = (EditText) findViewById(R.id.editText);
         nameEditTxt = (EditText) findViewById(R.id.nameEditTxt);
 
+        setTitle("Create a Group");
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -109,10 +111,12 @@ public class CreateGroup extends Activity {
                                             public void done(ParseException e) {
                                                 if (e == null)
                                                     System.out.println("group joined!!!");
+
                                             }
                                         });
+                                        finish();
                                     } else {
-                                        Log.d("weird 2!!!", "Error: " + e.getMessage());
+                                        Log.d("Weird1", "Error: " + e.getMessage());
                                     }
                                 }
                             });
