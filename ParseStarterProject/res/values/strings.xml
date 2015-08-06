@@ -12,7 +12,7 @@
     <string name="Welcome">Welcome!</string>
     <string name="signup">Sign Up</string>
     <string name="sendemail">Send Email Verification Code</string>
-    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_activity_navigation">StudyEDU</string>
     <string name="CreateGroupBtn">Create a Study Group</string>
     <string name="verificationcodetxt">Enter the Verification Code We Sent You</string>
 
