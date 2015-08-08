@@ -450,7 +450,7 @@
     <string name="sendemail">Send Email Verification Code</string>
     <string name="signup">Sign Up</string>
     <string name="title_activity_create_group">CreateGroup</string>
-    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_activity_navigation">StudyEDU</string>
     <string name="title_activity_spinners_menu">SpinnersMenu</string>
     <string name="title_section1">Find a Group</string>
     <string name="title_section2">My Groups</string>

@@ -10,13 +10,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select your class ID and #"
-        android:id="@+id/textView2" />
+        android:text="Select Your Class ID"
+        android:id="@+id/textView2"
+        android:padding="5dp"
+        android:paddingTop="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
 
-    <RelativeLayout
-        android:id="@+id/ReleSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+
         <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,27 +26,54 @@
             android:layout_weight="1"
             android:entries="@array/departments"
             android:prompt="@string/select"
-            android:spinnerMode="dropdown" />
+            android:spinnerMode="dropdown"
+            android:gravity="center"
+            style="?android:attr/spinnerItemStyle"
+            android:paddingLeft="80dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            />
 
-        <Spinner
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select your class Number"
+        android:id="@+id/textView3"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    <Spinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/spinner2"
             android:layout_weight="1"
+            style="?android:attr/spinnerItemStyle"
+
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="195dp"
             android:entries="@array/courses"
             android:prompt="@string/select2"
-            android:spinnerMode="dropdown" />
-    </RelativeLayout>
+            android:gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+        android:paddingLeft="80dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+           />
 
 
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/button_label" />
+        android:text="@string/button_label"
+        android:gravity="center"
+        android:layout_gravity="center" />
 
 </LinearLayout><!-- From: file:/Users/jenniferjain/Downloads/VersionAug2/VersionA/ParseStarterProject/res/layout/menu1_layout.xml -->

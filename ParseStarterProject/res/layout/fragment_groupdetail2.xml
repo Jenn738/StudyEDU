@@ -2,11 +2,15 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/detailbackground1"
+    >
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
+
 
         <TextView
             android:layout_width="match_parent"
@@ -15,7 +19,9 @@
             android:textStyle="bold"
             android:textSize="20sp"
             android:gravity="center_horizontal"
-            android:padding="7dp"/>
+            android:padding="7dp"
+            android:textColor="#424242"
+            />
 
 
         <LinearLayout
@@ -31,7 +37,9 @@
                 android:gravity="right"
                 android:paddingRight="5dp"
                 android:layout_weight="1"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textColor="#424242"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -43,6 +51,8 @@
                 android:paddingLeft="5dp"
                 android:layout_weight="1"
                 android:textStyle="bold"
+                android:textColor="#424242"
+
                 />
         </LinearLayout>
         <RelativeLayout
@@ -55,11 +65,12 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:id="@+id/dateImage"
-                android:src="@drawable/iconholder"
+                android:src="@drawable/date"
                 android:layout_weight="1"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
-                android:padding="5dp"/>
+                android:padding="5dp"
+                />
 
 
             <TextView
@@ -70,7 +81,9 @@
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:paddingTop="3dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
 
         </RelativeLayout>
 
@@ -82,7 +95,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:id="@+id/timeImage"
-                android:src="@drawable/iconholder"
+                android:src="@drawable/time"
                 android:layout_weight="1"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
@@ -96,7 +109,9 @@
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:paddingTop="3dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
         </RelativeLayout>
 
         <RelativeLayout
@@ -107,7 +122,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:id="@+id/locImage"
-                android:src="@drawable/iconholder"
+                android:src="@drawable/location"
                 android:layout_weight="1"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
@@ -121,7 +136,9 @@
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:paddingTop="3dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
         </RelativeLayout>
 
 
@@ -133,7 +150,7 @@
                 android:layout_width="35dp"
                 android:layout_height="35dp"
                 android:id="@+id/memImage"
-                android:src="@drawable/iconholder"
+                android:src="@drawable/group"
                 android:layout_weight="1"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
@@ -145,7 +162,9 @@
                 android:text="Current Members"
                 android:id="@+id/curMemTxt"
                 android:paddingTop="8dp"
-                android:layout_toRightOf="@id/memImage"/>
+                android:layout_toRightOf="@id/memImage"
+                android:textColor="#424242"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -156,7 +175,9 @@
                 android:layout_weight="1"
                 android:paddingLeft="5dp"
                 android:paddingTop="8dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -164,7 +185,9 @@
                 android:layout_toRightOf="@id/bracket1"
                 android:layout_weight="1"
                 android:paddingTop="8dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -173,7 +196,9 @@
                 android:layout_toRightOf="@id/CurNum"
                 android:layout_weight="1"
                 android:paddingTop="8dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -181,7 +206,9 @@
                 android:layout_toRightOf="@id/slash"
                 android:layout_weight="1"
                 android:paddingTop="8dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -190,7 +217,9 @@
                 android:layout_toRightOf="@id/spinnerMaxNum"
                 android:layout_weight="1"
                 android:paddingTop="8dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
 
 
             <TextView
@@ -200,6 +229,8 @@
                 android:padding="5dp"
                 android:layout_toRightOf="@id/memImage"
                 android:layout_below="@id/curMemTxt"
+                android:textColor="#424242"
+
                 />
 
 
@@ -228,7 +259,9 @@
                 android:text="Additional Information"
                 android:layout_toRightOf="@id/infoImage"
                 android:id="@+id/InfoTxt"
-                android:paddingTop="8dp"/>
+                android:paddingTop="8dp"
+                android:textColor="#424242"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -239,9 +272,12 @@
                 android:layout_weight="1"
                 android:padding="5dp"
                 android:paddingTop="3dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="#424242"
+                />
 
         </RelativeLayout>
+
 
         <Button
             android:layout_width="wrap_content"
